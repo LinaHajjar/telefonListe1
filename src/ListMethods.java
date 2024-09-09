@@ -27,7 +27,7 @@ public class ListMethods {
         System.out.println("Do you want to see the list in the ascending alphabetic order? yes/no");
         String answer = input.nextLine();
         if(UserInput.containsIgnoreCase("yes", answer)) {
-        //I create a Treeset in sted of Mapset and copy the elements from Map to Tree so I have them sorted in ascending alphabetic order
+        //I create a TreeMap in sted of Mapset and copy the elements from Map to Tree so I have them sorted in ascending alphabetic order
             TreeMap<String, String> sortedListe = new TreeMap<>();
              for (Map.Entry<String, String> m: liste.entrySet()){
                  sortedListe.put(m.getKey(), m.getValue());
@@ -57,8 +57,8 @@ public class ListMethods {
         if (matchingNames.isEmpty()) {
             System.out.println("The name you are searching for was not found in your list.");
         } else if (matchingNames.size() == 1) {
-            String nummer = matchingNames.values().iterator().next();
-            System.out.println("The number of " + matchingNames.keySet().iterator().next() + " is: " + nummer);
+            String number = matchingNames.values().iterator().next();
+            System.out.println("The number of " + matchingNames.keySet().iterator().next() + " is: " + number);
         } else {
             System.out.println("Multiple matches found:");
             int i = 1;

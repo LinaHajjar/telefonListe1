@@ -22,9 +22,9 @@ public class TelefonListe {
         telefonBook.remove(name);
     }
 
-    public String getTelefonNb (String name){
+    /*public String getTelefonNb (String name){
         return telefonBook.get(name);
-    }
+    }*/
 
 }
 

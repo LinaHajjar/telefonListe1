@@ -4,8 +4,7 @@ import java.util.Scanner;
     public class Main {
 
         public static void main(String[] args)throws IOException {
-            TelefonListe liste = new TelefonListe();
-            liste = FilHandler.readFromFile();
+            TelefonListe liste = FilHandler.readFromFile();
             Scanner input = new Scanner(System.in);
             hovedMenu(input, liste);
         }
